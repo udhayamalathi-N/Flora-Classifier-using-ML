@@ -1,0 +1,130 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Flora Identification and Care System</title>
+    <style>
+        body {
+            background-image: url('https://www.transparenttextures.com/patterns/leaf.png'); /* Leaf background pattern */
+            background-color: #e0f7e0; /* Light green */
+            color: #333; /* Dark grey */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #006400; /* Dark green */
+            color: #fff; /* White */
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #228b22; /* Forest green */
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+        }
+        nav a:hover {
+            background-color: #fff;
+            color: #228b22;
+            border-radius: 5px;
+        }
+        main {
+            padding: 20px;
+        }
+        .content {
+            background-color: rgba(255, 255, 255, 0.8); /* White with transparency */
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        footer {
+            background-color: #006400;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        input[type="file"] {
+            display: block;
+            margin: 20px 0;
+        }
+        button {
+            background-color: #228b22;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #006400;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Home Flora Identification and Care System</h1>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </nav>
+    <main>
+        <div class="content">
+            <h2>Welcome to our Home Flora Identification and Care System!</h2>
+            <p>This system helps you identify different types of indoor plants and provides care tips to keep them healthy.</p>
+            <p>Upload an image of your plant to get started!</p>
+            <input type="file" accept="image/*" id="upload">
+            <button onclick="identifyPlant()">Identify Plant</button>
+        </div>
+        <div class="content" id="result">
+            <h2>Identification Result</h2>
+            <!-- Identification results will be displayed here -->
+        </div>
+        <div class="content" id="care-instructions">
+            <h2>Care Instructions</h2>
+            <!-- Care instructions will be displayed here -->
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Home Flora Identification and Care System</p>
+    </footer>
+
+    <script>
+        function identifyPlant() {
+            // Placeholder function for plant identification
+            // Replace this with actual machine learning model integration
+            const resultDiv = document.getElementById('result');
+            const careInstructionsDiv = document.getElementById('care-instructions');
+
+            // Placeholder identification result
+            resultDiv.innerHTML = `
+                <p><strong>Plant Name:</strong> Tomato Plant</p>
+                <p><strong>Scientific Name:</strong> Solanum Lycopersicum</p>
+            `;
+
+            // Placeholder care instructions
+            careInstructionsDiv.innerHTML = `
+                <p><strong>Watering:</strong> Keep the soil moist but not waterlogged. Water when the top 1 inch of soil feels dry.</p>
+                <p><strong>Light:</strong> Place in bright, indirect sunlight. Avoid direct sunlight as it can scorch the leaves.</p>
+                <p><strong>Humidity:</strong> Prefers higher humidity. Mist the leaves regularly or use a humidifier.</p>
+                <p><strong>Temperature:</strong> Keep in a warm room, ideally between 65°F to 75°F (18°C to 24°C).</p>
+            `;
+        }
+    </script>
+</body>
+</html>
+
